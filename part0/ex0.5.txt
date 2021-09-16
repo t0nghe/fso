@@ -1,0 +1,38 @@
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML
+
+note over browser:
+div.container is the container of the page
+div.notes lists note items
+form#notes_form allows user to add new note
+--
+HTML links to:
+- main.css
+- spa.js
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+
+note over browser
+main.css speficies styling of div.container and div.notes
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser
+spa.js - when the page is loaded, xhttp tries to load `data.json` (shown in next step);
+when that is done (readystate is 4) and file is successfully fetched (HTTP 200 OK)
+The JSON file is parsed and rendered.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+
+note over browser
+data.json contains note objects, that will be rendered.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico

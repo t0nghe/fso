@@ -1,0 +1,29 @@
+HTML Page->spa.js: form.onsubmit
+
+note right of HTML Page
+User inputs text in form
+and clicks submit.
+end note
+
+spa.js->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note right of spa.js:
+`form.onsubmit`
+1. Creates note object with user input and  timestamp;
+2. Pushes this note object to the list of notes;
+end note
+
+spa.js-->HTML Page: redrawNotes();
+
+note left of spa.js:
+3. Re-renders the displayed webpage
+end note
+
+note right of spa.js:
+4. Post note object to server.
+end note
+
+note over server:
+Receives the note object
+and adds it to data.json
+end note

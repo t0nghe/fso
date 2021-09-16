@@ -1,0 +1,114 @@
+{
+  "anecdotes": [
+    {
+      "content": "If it hurts, do it more often",
+      "id": "47145",
+      "votes": 24
+    },
+    {
+      "content": "Adding manpower to a late software project makes it later!",
+      "id": "21149",
+      "votes": 3
+    },
+    {
+      "content": "The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
+      "id": "69581",
+      "votes": 11
+    },
+    {
+      "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+      "id": "36975",
+      "votes": 1
+    },
+    {
+      "content": "Premature optimization is the root of all evil.",
+      "id": "25170",
+      "votes": 22
+    },
+    {
+      "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
+      "id": "98312",
+      "votes": 1
+    },
+    {
+      "content": "您好！",
+      "id": "17673",
+      "votes": 5
+    },
+    {
+      "content": "Hello. I'm testing this shit again! ",
+      "id": "79209",
+      "votes": 9
+    },
+    {
+      "content": "Test with redux-thunk",
+      "id": "29873",
+      "votes": 0
+    },
+    {
+      "content": "What!? Why did it work in the background?",
+      "id": "30507",
+      "votes": 1
+    },
+    {
+      "content": "Testing again.",
+      "id": "35973",
+      "votes": 1
+    },
+    {
+      "content": "Why doesn't it work, dude!",
+      "id": "23237",
+      "votes": 13
+    },
+    {
+      "content": "What does the POST method return?",
+      "id": "3700",
+      "votes": 0
+    },
+    {
+      "content": "test from rest API",
+      "id": "12345",
+      "votes": 26
+    },
+    {
+      "content": "It was because I forgot await",
+      "id": "44113",
+      "votes": 11
+    },
+    {
+      "content": "Hello again.",
+      "id": "41194",
+      "votes": 0
+    },
+    {
+      "content": "Let's see what gets returned",
+      "id": "9988",
+      "votes": 11
+    },
+    {
+      "content": "Let's try this again",
+      "id": "55809",
+      "votes": 0
+    },
+    {
+      "content": "hello",
+      "id": "54148",
+      "votes": 5
+    },
+    {
+      "content": "hello",
+      "id": "35079",
+      "votes": 6
+    },
+    {
+      "content": "Hello",
+      "id": "26268",
+      "votes": 0
+    },
+    {
+      "content": "Meow",
+      "id": "61026",
+      "votes": 0
+    }
+  ]
+}

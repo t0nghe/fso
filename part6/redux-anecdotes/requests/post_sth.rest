@@ -1,0 +1,7 @@
+POST http://localhost:3001/anecdotes/
+Content-Type: application/json
+
+{ "content": "test from rest API", 
+    "id": "12345",
+    "votes": 3
+}

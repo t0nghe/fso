@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRvbmdoZSIsImlkIjoiNjBmMDZmODA2M2M1NzgwYjczNGIyNjMyIiwiaWF0IjoxNjI2Mzc2OTQyfQ.p5koYJh7URH4nP-zobpLYv4TFh7uVx2fNAbuJE0zAYc
+
+{
+    "title": "created from rest api 2",
+    "author": "me",
+    "url": "http://abc.com/2"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "fso8assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.4.10",
+    "apollo-server": "^2.25.2",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "gpl": "^0.0.1",
+    "graphql": "^15.5.3",
+    "graphql-subscriptions": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.9",
+    "mongoose-unique-validator": "^2.0.3",
+    "subscriptions-transport-ws": "^0.9.19",
+    "uuid": "^8.3.2"
+  }
+}

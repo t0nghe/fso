@@ -1,0 +1,82 @@
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: html
+
+note over browser:
+html Defines skeleton of the webpage.
+In which `div.container` is the container.
+And `div.notes` contains all the notes
+that will be fetched in `data.json`.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+
+note over browser:
+main.css defines the styling for `.container` and `.notes`. 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+note over browser:
+When main.js is invoked, it requests `/data.json` and
+renders the content in that json file into a list.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+
+note over browser:
+data.json contains dozens of notes.
+Each note contains a piece of text and a timestamp. 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
+
+note over browser:
+favicon.ico. What a surprise. This favicon is actually
+not an image, but a webpage! I suppose this is for stats purposes. 
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over browser:
+The user types “I know, right?” and hits submit.
+The browser posts “I know, right?” to the server.
+`note=I+know%2C+right%3F` 
+end note
+
+server-->browser: HTTP 302 Found https://studies.cs.helsinki.fi/exampleapp/notes
+
+note over server:
+creates new note object with user input and date:
+`{"content":"I know, right?",
+"date":"2021-01-08T17:57:25.968Z"}`
+end note
+
+note over server:
+Server appends the above object to `data.json`
+end note:
+
+note over server:
+Server redirects the browser to `/notes`.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: html
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+
+note over browser:
+Now, `data.json` contains one more note than at the beginning.
+Which will be rendered onto the page by `main.js`.
+Other assets remain the same.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico 
